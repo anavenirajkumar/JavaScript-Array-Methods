@@ -20,7 +20,6 @@ const numbers = [175, 50, 25];
 | constructor | let text = fruits.constructor; <br> console.log(text); | function Array() { [native code] } | function that created the Array prototype | No |
 | copyWithin() | let c = fruits.copyWithin(2,0); <br>console.log(c) | Banana,Orange,Banana,Orange | Copy the first two array elements to the last two array elements | No |
 | entries() | const f = fruits.entries(); <br> for (let x of f) { <br> console.log(x); <br>} | 0,Banana <br> 1,Orange <br> 2,Apple <br> 3,Mango <br> | Create an Array Iterator, <br> and then iterate over the key/value pairs: | No |
-| reduceRight() | let totalAmout = numbers.reduceRight(myFunc); <br> function myFunc(total, num) { <br>  return total - num; } | -200 | number | No |
 | toString() | let ftext = fruits.toString();  <br> console.log(ftext); <br> | Banana,Orange,Apple,Mango | Convert an array to a string, <br> does not change the original array <br> | No |
 | valueOf() | const myArray = fruits.valueOf(); <br> console.log(myArray); | ["Banana", "Orange", "Apple", "Mango"]; | method returns the array | No |
 | keys()        | const iterator = arr.keys(); <br> for (const key of iterator) { <br> console.log(key);<br> }                                        | 0 <br> 1 <br> 2 <br> 3                                      | Array Iterator | No       |
@@ -37,6 +36,7 @@ const numbers = [175, 50, 25];
 | indexOf()     | console.log(arr.indexOf(3));                                                                                                        | 1                                                           | number         | No       |
 | lastIndexOf() | console.log(arr2.lastIndexOf(5));                                                                                                   | 3                                                           | number         | No       |
 | reduce()      | console.log(arr.reduce((pre, curr) => pre + curr));                                                                                 | 16                                                          | number         | No       |
+| reduceRight() | let totalAmout = numbers.reduceRight(myFunc); <br> function myFunc(total, num) { <br>  return total - num; } | -200 | number | No |
 | find()        | console.log(arr.find((num) => num > 3));                                                                                            | 5                                                           | first one      | No       |
 | findIndex()   | console.log(arr.findIndex((num) => num > 3));                                                                                       | 2                                                           | first one      | No       |
 | every()       | console.log(arr.every((num) => num % 2 === 1));                                                                                     | TRUE                                                        | boolean        | No       |
